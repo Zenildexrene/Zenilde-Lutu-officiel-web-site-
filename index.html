@@ -1,0 +1,44 @@
+```html
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zenilde Lutu</title>
+</head>
+<body>
+<div id="welcome-page">
+    <h1>Zenilde Lutu</h1>
+    <button id="start-button">Démarrer</button>
+</div>
+
+<div id="main-menu" style="display: none;">
+    <h2>Menu Principal</h2>
+    <ul>
+        <li><button id="follow-facebook">Suivre sur Facebook</button></li>
+        <li><button id="follow-tiktok">Suivre sur TikTok</button></li>
+        <li><button id="follow-youtube">Suivre sur YouTube</button></li>
+    </ul>
+</div>
+
+<script>
+document.getElementById("start-button").addEventListener("click", function() {
+    document.getElementById("welcome-page").style.display = "none";
+    document.getElementById("main-menu").style.display = "block";
+});
+
+document.getElementById("follow-facebook").addEventListener("click", function() {
+    window.location.href = "https://www.facebook.com/profile.php?id=100085224643381&mibextid=ZbWKwL";
+});
+
+document.getElementById("follow-tiktok").addEventListener("click", function() {
+    window.location.href = "https://www.tiktok.com/@crazykong01?_r=1&_d=eceb0131gdfh38&sec_uid=MS4wLjABAAAAwR8ktB002_PwfUgPImJufBvgntVUjE6qm8xTEISxlvDi8HSBtyt1F4UdtSIM2YwI&share_author_id=7151040143481422854&sharer_language=fr&source=h5_m&u_code=e474kf1l9aj3bm&timestamp=1709540303&user_id=7151040143481422854&sec_user_id=MS4wLjABAAAAwR8ktB002_PwfUgPImJufBvgntVUjE6qm8xTEISxlvDi8HSBtyt1F4UdtSIM2YwI&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7340470274649605893&share_link_id=b0ebb534-6121-4235-9640-e90cdb30bf87&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5";
+});
+
+document.getElementById("follow-youtube").addEventListener("click", function() {
+    window.location.href = "https://youtube.com/@zenildelutu1955?si=n8r-iZGleF7RbhC6";
+});
+</script>
+</body>
+</html>
+```
